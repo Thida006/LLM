@@ -143,11 +143,11 @@ if my_key:
  
 is_disabled = not bool(birthday)
 
-daily = st.text_input("Ask about daily divination. or other aspect such as love, wealth, health, work", disabled = is_disabled )
+daily = st.text_input("Ask about daily divination. or other aspect such as love, wealth, health, work.Type in any langauge you like. (สามารถพิมพ์เป็นภาษาอะไรก็ได้"), disabled = is_disabled )
 if  daily:
     daily_divination(daily)
 
-tarot = st.text_input("Please type number between 1-4 for tarot divination. For example: If you want to draw one card type 1", disabled = is_disabled)
+tarot = st.text_input("Please type number between 1-4 for tarot divination. For example: If you want to draw one card type 1.(พิมพ์ตัวเลข 1-4 เท่านั้น)", disabled = is_disabled)
 if tarot:
     tarot_divination(tarot)
 
